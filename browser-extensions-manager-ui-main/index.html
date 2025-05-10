@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+   <header class="extensions-header">
+    <div class="header-content">
+     <h1>Extensions List</h1> 
+     <div class="theme-toggle">
+      <button id="theme-switch">
+        <span class="light-mode">
+          <img src="./assets/images/icon-sun.svg" alt="light">
+        </span>
+        <span class="dark-mode">
+          <img src="./assets/images/icon-moon.svg" alt="dark">
+        </span>
+      </button>
+     </div>
+     </div>
+   </header>
+
+   <div class="class filter-buttons">
+  <button class="filter-button active" data-filter="all">All</button>
+  <button class="filter-button" data-filter="active">Active</button>
+  <button class="filter-button" data-filter="inactive">Inaction</button>
+</div>
+  
+
+  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+  
+
+  <div class="extension-card active">
+    <img src="./assets/images/logo-devlens.svg" alt="DevLens">
+    <div class="extension-info">
+        <h2>DevLens</h2>
+        <p>Quickly inspect page layouts and visualize element boundaries.</p>
+    </div>
+    <button class="remove-button">Remove</button>
+</div>
+ 
+    <div class="extension-card active">
+      <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy">
+      <h2>StyleSpy</h2>
+      <p>Instantly analyze and copy CSS from any webpage element..</p>
+      <button class="remove-button">Remove</button>
+      </div>
+
+      <div class="extension-card active">
+        <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost">
+        <h2>SpeedBoost</h2>
+        <p>Optimizes browser resource usage to accelerate page loading.</p>
+        <button class="remove-button">Remove</button>
+        </div>
+
+        <div class="extension-card active">
+          <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard">
+          <h2>JSONWizard</h2>
+          <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+          <button class="remove-button">Remove</button>
+          </div>
+
+          <div class="extension-card active">
+            <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro">
+            <h2>TabMaster Pro</h2>
+            <p>Organizes browser tabs into groups and sessions.</p>
+            <button class="remove-button">Remove</button>
+            </div>
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy">
+                  <h2> ViewportBuddy</h2>
+                  <p>Simulates various screen resolutions directly within the browser.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+                
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes">
+                  <h2>Markup Notes</h2>
+                  <p> Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides">
+                  <h2>GridGuides</h2>
+                  <p>Overlay customizable grids and alignment guides on any webpage.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-palette-picker.svg" alt="palette-picker">
+                  <h2>Palette Picker</h2>
+                  <p>Instantly extracts color palettes from any webpage.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker">
+                  <h2>LinkChecker</h2>
+                  <p>Scans and highlights broken links on any page.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot">
+                  <h2>DOM Snapshot</h2>
+                  <p>Capture and export DOM structures quickly.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+                 <div class="extension-card active">
+                  <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus">
+                  <h2> ConsolePlus</h2>
+                  <p>Enhanced developer console with advanced filtering and logging.</p>
+                  <button class="remove-button">Remove</button>
+                 </div>
+
+                 
+  
+ 
+
+ 
+  
+  Remove
+
+  
+ 
+  Remove
+
+  
+  
+  Remove
+
+  
+  
+  Remove
+
+ 
+  
+  Remove
+
+  
+  
+  Remove
+
+ 
+  
+  Remove
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

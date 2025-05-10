@@ -1,0 +1,121 @@
+/* Import Noto Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #6C63FF;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --background-blue:hsl(227, 75%, 14%);
+  --background-dark: #1A1A1A;
+  --card-background: #F5F5F5;
+  --card-background-dark: #2D2D2D;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--background-blue);
+  color: var(--text-dark);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.extensions-header {
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--card-background);
+  color: var(--text-dark);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.extension-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.extension-card img {
+  width: 48px;
+  height: 48px;
+}
+
+.extension-info h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.extension-info p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+.remove-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FF4444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #FF0000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: white;
+}
+
+body.dark-mode .extension-card {
+  background-color: var(--card-background-dark);
+}
+
+body.dark-mode .filter-button {
+  background-color: var(--card-background-dark);
+  color: white;
+}
+
+body.dark-mode .extension-info p {
+  color: #AAAAAA;
+}
